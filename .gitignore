@@ -1,0 +1,25 @@
+# Environnements virtuels
+.venv/
+.env
+
+# Fichiers de configuration spécifiques à l'éditeur
+.vscode/
+.idea/
+
+# Cache de Python
+__pycache__/
+*.pyc
+
+# Dépendances
+*.egg-info/
+*.egg
+*.py[cod]
+*.pyo
+
+# Journaux et bases de données locales
+*.log
+*.sqlite3
+
+# Fichiers générés automatiquement
+dist/
+build/
