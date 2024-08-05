@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from openai import OpenAI
 from fastapi.middleware.cors import CORSMiddleware
 import os
@@ -18,11 +18,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
-@app.get("/")
-def root():
-    return {"message": "Hello World"}
 
 
 @app.get("/search")
