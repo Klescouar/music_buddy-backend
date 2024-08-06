@@ -31,8 +31,8 @@ def get_suggestion(input: str):
             },
             {
                 "role": "user",
-                "content": f"Return an array of 10 suggestions that sounds like {input}."
-                + "Each song will be a dict with title and artist keys like this. I just need the array, don't send me other information. Example of the return: [{'title': 'song title', 'artist': 'song artist'}, ...]",
+                "content": f"Return an array of 10 suggestions that sounds like {input}. Suggestions should not be songs from the same group or artist. Suggestions should be very similar to {input}, same music style, same period."
+                + "Each song will be a dict with title and artist keys like this. I just need the array, don't send me other information. Example of the return: [{'title': 'song title', 'artist': 'song artist'}]. if there are some apostrophes in titles or artist names, remove it and replace it with a space",
             },
         ],
     )
