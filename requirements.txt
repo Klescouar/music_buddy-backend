@@ -4,3 +4,5 @@ types-redis
 uvicorn
 requests
 openai
+SQLAlchemy
+psycopg2-binary
